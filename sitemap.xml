@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://butterfly.devilaguo.com/tags/index.html</loc>
+    
+    <lastmod>2021-02-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://butterfly.devilaguo.com/2021/02/04/%E7%8E%8B%E5%B0%8F%E6%B3%A2/</loc>
+    
+    <lastmod>2021-02-03</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://butterfly.devilaguo.com/2020/04/16/test/</loc>
     
     <lastmod>2021-02-03</lastmod>
@@ -10,13 +24,6 @@
   
   <url>
     <loc>https://butterfly.devilaguo.com/2021/02/04/%E6%B2%89%E9%BB%98/</loc>
-    
-    <lastmod>2021-02-03</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://butterfly.devilaguo.com/2021/02/04/%E7%8E%8B%E5%B0%8F%E6%B3%A2/</loc>
     
     <lastmod>2021-02-03</lastmod>
     
@@ -52,13 +59,6 @@
   
   <url>
     <loc>https://butterfly.devilaguo.com/2021/02/03/hello-world/</loc>
-    
-    <lastmod>2021-02-03</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://butterfly.devilaguo.com/tags/index.html</loc>
     
     <lastmod>2021-02-03</lastmod>
     
@@ -102,7 +102,7 @@
 
   <url>
     <loc>https://butterfly.devilaguo.com/</loc>
-    <lastmod>2021-02-03</lastmod>
+    <lastmod>2021-02-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -110,42 +110,42 @@
   
   <url>
     <loc>https://butterfly.devilaguo.com/tags/%E5%8C%BF%E5%90%8D%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2021-02-03</lastmod>
+    <lastmod>2021-02-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://butterfly.devilaguo.com/tags/%E5%B0%BC%E9%87%87/</loc>
-    <lastmod>2021-02-03</lastmod>
+    <lastmod>2021-02-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://butterfly.devilaguo.com/tags/%E7%8E%8B%E5%B0%8F%E6%B3%A2/</loc>
-    <lastmod>2021-02-03</lastmod>
+    <lastmod>2021-02-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://butterfly.devilaguo.com/tags/%E9%9F%B3%E6%A8%82/</loc>
-    <lastmod>2021-02-03</lastmod>
+    <lastmod>2021-02-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://butterfly.devilaguo.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
-    <lastmod>2021-02-03</lastmod>
+    <lastmod>2021-02-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://butterfly.devilaguo.com/tags/%E9%9D%A2%E8%AF%95/</loc>
-    <lastmod>2021-02-03</lastmod>
+    <lastmod>2021-02-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -154,7 +154,7 @@
   
   <url>
     <loc>https://butterfly.devilaguo.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
-    <lastmod>2021-02-03</lastmod>
+    <lastmod>2021-02-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
