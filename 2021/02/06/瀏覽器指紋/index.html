@@ -1,0 +1,257 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>一种基于特征隐式获取的抗干扰浏览器指纹生成方法 | DevilAguo0</title><meta name="keywords" content="浏览器指纹"><meta name="author" content="DevilAguo0"><meta name="copyright" content="DevilAguo0"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="本发明涉及一种基于特征隐式获取的抗干扰浏览器指纹生成方法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一种基于特征隐式获取的抗干扰浏览器指纹生成方法">
+<meta property="og:url" content="https://butterfly.devilaguo.com/2021/02/06/%E7%80%8F%E8%A6%BD%E5%99%A8%E6%8C%87%E7%B4%8B/index.html">
+<meta property="og:site_name" content="DevilAguo0">
+<meta property="og:description" content="本发明涉及一种基于特征隐式获取的抗干扰浏览器指纹生成方法">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://8zekai.com/wp-content/uploads/2020/09/digital-fingerprint.jpg">
+<meta property="article:published_time" content="2021-02-06T09:54:58.000Z">
+<meta property="article:modified_time" content="2021-02-06T09:57:37.672Z">
+<meta property="article:author" content="DevilAguo0">
+<meta property="article:tag" content="浏览器指纹">
+<meta property="article:tag" content="浏览器指纹生成方法">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://8zekai.com/wp-content/uploads/2020/09/digital-fingerprint.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://butterfly.devilaguo.com/2021/02/06/%E7%80%8F%E8%A6%BD%E5%99%A8%E6%8C%87%E7%B4%8B/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-188656096-2"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-188656096-2');
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2021-02-06 17:57:37'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="DevilAguo0" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mv5bztnmoge1zmqtyjzmyy00mdhklthkzjytnzkyzdyxnta5zte0xkeyxkfqcgdeqxvynjg2njqwmdqat-v1-sy739-cr0-0-1776-739-al-1557325382.jpg?crop=0.502xw:1.00xh;0.280xw,0&amp;resize=640:*" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 娱乐</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于博主</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://8zekai.com/wp-content/uploads/2020/09/digital-fingerprint.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">DevilAguo0</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 娱乐</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于博主</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">一种基于特征隐式获取的抗干扰浏览器指纹生成方法</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-02-06T09:54:58.000Z" title="发表于 2021-02-06 17:54:58">2021-02-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-02-06T09:57:37.672Z" title="更新于 2021-02-06 17:57:37">2021-02-06</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8C%87%E7%BA%B9/">浏览器指纹</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">7.6k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>23分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>Abstract<br>本发明涉及一种基于特征隐式获取的抗干扰浏览器指纹生成方法，包括以下步骤：步骤S1：通过浏览器对CSS解释的效果差异隐式得到包括浏览器类型及版本、屏幕分辨率、设备像素比以及Firefox特殊信息的浏览器特征信息；步骤S2：通过字体探测方法隐式获取浏览器中包含的字体特征信息；步骤S3：将所述步骤S1中获取的浏览器特征信息与所述步骤S2中获取的字体特征信息进行组合生成指纹。本发明规避了指纹干扰工具对直接调用系统API显式获取字体列表、屏幕分辨率、浏览器版本等带来的干扰，在使用干扰工具的情况下依然能够生成有效指纹。</p>
+<p>Description<br>一种基于特征隐式获取的抗干扰浏览器指纹生成方法<br>技术领域</p>
+<p>[0001] 本发明涉及浏览器指纹技术领域，特别是涉及一种基于特征隐式获取的抗干扰浏 览器指纹生成方法。</p>
+<p>背景技术</p>
+<p>[0002] 随着计算机技术的发展以及互联网用户不断增加，在web应用上进行的信息交互 越来越多。当用户浏览网站时，用户信息、执行状态、个人数据等会话状态信息将会被保存 在用户设备的cookie中。然而，cookie为用户识别和行为关联提供支持的同时，也引发了用 户隐私泄露等问题。为了保护用户隐私，浏览器提供了禁用cookie的功能，cookie中包含的 标识信息容易被销毁。由于不同用户的浏览器中具有不同的特征信息，浏览器指纹技术通 过收集用户浏览器的特征数据，提供了一种无 cookie情况下的用户识别方法。</p>
+<p>[0003] 通过分析Web访问的信息交互过程，发现用户访问Web站点时，Web站点能够收集 User-Agent、浏览器版本、插件列表、操作系统等特征信息，通过对这些信息进行组合可以 作为用户识别的指纹。当前，浏览器指纹主要可以分为四类:基于浏览器环境的浏览器特定 指纹、Canvas指纹、javascript引擎指纹、跨浏览器指纹。通过Flash JavaScript、HTTP headers获取User Agent、系统字体、浏览器插件、屏幕分辨率等特征生成指纹。随着支持 HTML5的浏览器不断增多，提出Canvas指纹方法，通过HTML5的Canvas API和WebGL获取文本 渲染的像素差异数据，结合图形处理器以及操作系统生成指纹。通过Javascript引擎的一 致性测试确定特定浏览器及其版本号从而生成指纹。跨浏览器指纹和前面讨论的指纹主要 区别在于跨浏览器指纹生成指纹时使用的是独立于浏览器的特性，一个简单的跨浏览器指 纹算法可以仅仅依靠 JavaScript和字体信息。</p>
+<p>[0004] 常用的浏览器指纹特征采集主要通过用户递交的HTTP请求获取浏览器版本、可接 收类型信息等，通过页面中嵌入JavaScript代码获取用户的屏幕分辨率、插件、时区等信 息，同时结合Flash方法获取字体信息。然而，随着研究的不断深入，浏览器指纹的干扰方法 不断被提出，一些用于检测指纹或干扰指纹生成的工具也得到了不同程度的应用，主要有 FireGlove、Canvasf ingerprintblock、Charnel eon 等。FireGloves 通过限制浏览器的一些功 能来阻止插件信息的收集，并且能够清空浏览器的字体列表信息，随机伪造屏幕分辨率等 特征信息。CanvasFingerprintBlock通过禁用Canvas，为Canvas元素返回一个空图像来干 扰指纹的生成;Chameleon能够检测用户访问的网站是否有采集用户特征信息的相关行为 并提示用户防止指纹。</p>
+<p>[0005] 综上所述，浏览器指纹技术常被应用于用户追踪、身份认证等方面，但指纹干扰工 具能够通过伪造信息、限制功能等方式影响指纹的生成。</p>
+<p>发明内容</p>
+<p>[0006] 有鉴于此，本发明的目的是提供一种基于特征隐式获取的抗干扰浏览器指纹生成 方法，通过浏览器对CSS解释的效果差异隐式得到浏览器类型、屏幕分辨率、设备像素比等 特征信息，通过字体探测方法隐式获取浏览器中包含的字体特征信息，规避了指纹干扰工 具对直接调用系统API显式获取字体列表、屏幕分辨率、浏览器版本等带来的干扰，在使用 干扰工具的情况下依然能够生成有效指纹。</p>
+<p>[0007] 本发明采用以下方案实现：一种基于特征隐式获取的抗干扰浏览器指纹生成方 法，包括以下步骤：</p>
+<p>[0008] 步骤S1:通过浏览器对CSS解释的效果差异隐式得到包括浏览器类型及版本、屏幕 分辨率、设备像素比以及Firefox特殊信息的浏览器特征信息；</p>
+<p>[0009] 步骤S2:通过字体探测方法隐式获取浏览器中包含的字体特征信息；</p>
+<p>[0010] 步骤S3:将所述步骤S1中获取的浏览器特征信息与所述步骤S2中获取的字体特征 信息进行组合生成指纹。</p>
+<p>[0011] 进一步地，所述步骤si中，通过不同类型及版本的浏览器对css属性的兼容性和解 释的差异，隐式推得浏览器的类型及版本，并获取其中所包含的差异特征信息。</p>
+<p>[0012]进一步地，所述 CSS属性包括 border-image、-webkit-mask_image、border-image-source、box-sizing、background-size、column-count、transform-〇rign、nav_index、 outline-offset。</p>
+<p>[0013] 进一步地，所述步骤SI中，通过Media queries方法隐式获取设备屏幕分辨率、设 备像素比、Firefox特殊信息；其中，通过所述Media queries方法设置宽高特性测试表达 式，根据浏览器对Media queries解释的结果推得设备的屏幕分辨率；通过所述Media queries方法设置设备像素比特性测试表达式，根据浏览器的解释结果获取设备像素比。</p>
+<p>[0014] 进一步地，所述步骤S1中，所述Firefox特殊信息包括是否使用桌面窗口管理器、 是否使用windows默认主题、是否为经典模式。</p>
+<p>[0015] 进一步地，所述步骤S2中，根据浏览器渲染字体差异信息，通过探测字体的方法获 取浏览器中包含的字体特征信息。</p>
+<p>[0016] 进一步地，所述步骤S2中，分别获取任意一文本中文本元素左边界与右边界到浏 览器视窗左边界的距离幻与1 2,文本元素上边界与下边界到浏览器视窗上边界的距离7:与 y2，并计算X=x2_xi、Y=y2_yi，X、Y为该文本的字体探测边界值比较参数，获取所述文本元素 的字体特征信息的方法具体为:首先设置文本的默认字体，获取并记录浏览器渲染后的心、 心值，然后将文本字体更改为一种特定的字体，记录下浏览器渲染后的X 2、Y2值;使用所述特 定字体的结果取决于用户浏览器上该字体是否可用，如果浏览器不支持该特定字体，则会 沿用默认字体;对比默认字体情况下记录的值和指定字体情况下记录的Χ 2、Υ2值，逻辑 结果result= (Χι = Χ2) Λ (Υι = Υ2)，当result为true则指定字体不存在，若为false则指定 字体存在，若探测的字体数量越多，所获得的字体特征差异性越大。</p>
+<p>[0017] 进一步地，所述步骤S3中，将步骤S1与步骤S2中采集得到的差异特征信息、屏幕分 辨率、设备像素比、Firefox的特殊信息以及字体特征信息存储在数据库中，使用SHA1对数 据进行加密，最后通过base64方式对其进行编码生成指纹。</p>
+<p>[0018] 进一步地，所述浏览器指纹生成算法具体为：</p>
+<p>[0019] 设定指纹算法为F( ·)，当出现一个新的浏览器信息X，生成一个浏览器指纹F(x)， 其遵循离散概率密度函数P(fn)，ne [0，1，. . .，N];对于某个特征参数的指纹生成结果fn，使 用自信息量I表示该浏览器指纹包含信息的比特数，其定义为：</p>
+<p>Figure CN106446202AD00061<br>[0021] 当指纹由不同的特征组合而成，设定每个特征参数对应的处理方法Fs(·)，ses， 根据公式⑵和⑶单独计算每个特征的自信息量并定义指纹组件的信息熵H (F)，信息熵表 征浏览器所有自信息量的期望值，对于两个相互独立的特征组件，自信息量可直接线性相 加：</p>
+<p>Figure CN106446202AD00062<br>[0024] 根据自信息量I确认指纹关联对象的身份，所述自信息量I包含多个bit信息，通过 选取恰当且包含足够bit信息的特征集合，通过其生成的指纹唯一确认关联对象的身份，所 述特征集合包括字体特征信息、屏幕分辨率、浏览器渲染字体差异信息、设备像素比、 Firefox特殊信息。</p>
+<p>[0025] 与现有技术相比，本发明提出了一种基于特征隐式获取的抗干扰浏览器指纹生成 算法，通过浏览器对CSS解释的效果差异隐式得到浏览器类型、屏幕分辨率、设备像素比等 特征信息，通过字体探测方法隐式获取浏览器中包含的字体特征信息。本文规避了指纹干 扰工具对直接调用系统API显式获取字体列表、屏幕分辨率、浏览器版本等带来的干扰，在 使用干扰工具的情况下依然能够生成有效指纹。</p>
+<p>附图说明</p>
+<p>[0026] 图1为本发明实施例中屏幕分辨率获取方法的示例图。</p>
+<p>[0027] 图2为本发明实施例中像素比获取方法的示例图。</p>
+<p>[0028] 图3为本发明实施例中字体渲染差异示意图。</p>
+<p>[0029] 图4为本发明实施例中探测参数时的文本示意图。</p>
+<p>[0030] 图5为本发明实施例中步骤S3的方法流程示意图。</p>
+<p>[0031] 图6为本发明实施例中的屏幕分辨率测试示意图。</p>
+<p>[0032]图7为本发明的方法流程示意图。</p>
+<p>具体实施方式</p>
+<p>[0033]下面结合附图及实施例对本发明做进一步说明。</p>
+<p>[0034] 本实施例提供一种基于特征隐式获取的抗干扰浏览器指纹生成方法，如图7所示， 包括以下步骤：</p>
+<p>[0035] 步骤S1:通过浏览器对CSS解释的效果差异隐式得到包括浏览器类型及版本、屏幕 分辨率、设备像素比以及Firefox特殊信息的浏览器特征信息；</p>
+<p>[0036] 步骤S2:通过字体探测方法隐式获取浏览器中包含的字体特征信息；</p>
+<p>[0037] 步骤S3:将所述步骤S1中获取的浏览器特征信息与所述步骤S2中获取的字体特征 信息进行组合生成指纹。</p>
+<p>[0038] 在本实施例中，所述步骤S1中，通过不同类型及版本的浏览器对CSS属性的兼容性 和解释的差异，隐式推得浏览器的类型及版本，并获取其中所包含的差异特征信息，其中所 述 CSS属性包括border-image、-webkit-mask_image、border-image-source、box-sizing、 background-size、column-count、transform-〇rign、nav_index、outline-offset〇</p>
+<p>[0039] 在本实施例中，在生成浏览器的指纹特征中，User-Agent包含了浏览器版本等信 息，但是相关的指纹干扰工具会影响信息的获取。因此根据不同类型及版本的浏览器对CSS 属性的兼容性和解释的差异，隐式推得浏览器的类型及版本，并获取其中所包含的差异特 征信息，从而避免指纹干扰工具对特征信息获取的影响。选取的CSS属性如表1所示，通过浏 览器对表中9个属性的解释差异估计浏览器的类型及其版本。</p>
+<p>[0040] 表1 CSS属性表</p>
+<p>Figure CN106446202AD00071<br>[0042] 在CSS3中，Media queries通过媒体特性限制样式表的作用范围，只有符合媒体特 性的相应条件，浏览器才会调用对应的样式表，指纹干扰工具无法限制Media queries的作 用。</p>
+<p>[0043] 在本实施例中，所述步骤S1中，通过Media queries方法隐式获取设备屏幕分辨 率、设备像素比、Firefox特殊信息；其中，通过所述Media queries方法设置宽高特性测试 表达式，根据浏览器对Media queries解释的结果推得设备的屏幕分辨率;通过所述Media queries方法设置设备像素比特性测试表达式，根据浏览器的解释结果获取设备像素比。 [0044] 其中，使用Media queries方法设置宽高特性测试表达式，由于浏览器只解释与设 备宽高相匹配的Media queries，因此根据浏览器对Media queries解释的结果能够推得设 备的屏幕分辨率。如图1所示，Media queries宽度特性测试，当屏幕分辨率的宽是1024像素 时，与stylel中的Media queries宽度特性条件匹配，浏览器将对stylel进行解释；当屏幕 分辨率的宽是1280像素时，与style2中的Media queries宽度特性条件匹配，浏览器将对 style2进行解释。同理，进行Media queries高度特性测试。根据Media queries宽高特性测 试的不同匹配结果，可以推出屏幕分辨率信息。</p>
+<p>[0045] 设备像素比（devicePixelRatio)是设备物理像素与设备独立像素的比值，不同设 备的设备像素比存在差异，通过Media queries设置设备像素比设备像素比特性表达式，根 据浏览器的解释结果获取设备像素比。如图2所示，分别设置像素比表达式条件为1和2,通 过浏览器对其解释的差异可推得设备像素比信息。目前该方法只能在Chromejpera、 Firefox浏览器上执行，IE浏览器不支持设备像素比的Media queries。</p>
+<p>[0046] 另外，所述Firefox特殊信息包括是否使用桌面窗口管理器、是否使用windows默 认主题、是否为经典模式。由于Firefox浏览器的特殊性，除了收集上述的信息外，还通过 Media queries收集了表2所示信息，从而增强指纹的准确性，其中是否使用桌面窗口管理 器特征，通过javascript无法收集，而通过CSS可以。</p>
+<p>[0047] 表2 Firefox特殊信息</p>
+<p>Figure CN106446202AD00081<br>[0049] 在本实施例中，指纹中常用获取字体方法是通过API获取字体列表，指纹干扰工具 FireGloves可以清空字体列表，所述步骤S2中，根据浏览器渲染字体差异信息，通过探测字 体的方法获取浏览器中包含的字体特征信息。</p>
+<p>[0050] 如图3所示，第一行是字号相同，字体分别为Arial、cursive、calibri的文本元素 在Chrome浏览器中植染的结果，第二行是相同字号，字体分别为Arial、cursive、cal ibri的 文本元素在Firefox浏览器中渲染的结果，它们呈现的边界值有所不同。字体在浏览器中的 渲染受浏览器版本、安装的字体类型、抗锯齿设置等因素的影响，相同字体、相同字号的字 符在不同浏览器中会呈现不同的边界值，不同字体、相同字号的字符在同一个浏览器中呈 现的边界值也存在差异。</p>
+<p>[0051]则如图4所示，分别获取任意一文本中文本元素左边界与右边界到浏览器视窗左 边界的距离^与^，文本元素上边界与下边界到浏览器视窗上边界的距离7:与72,并计算X = X2-X1、Y = y2-yi，X、Y为该文本的字体探测边界值比较参数，获取所述文本元素的字体特 征信息的方法具体为:首先设置文本的默认字体，获取并记录浏览器渲染后的^、心值，然后 将文本字体更改为一种特定的字体，记录下浏览器渲染后的X 2、Y2值;使用所述特定字体的 结果取决于用户浏览器上该字体是否可用，如果浏览器不支持该特定字体，则会沿用默认 字体；对比默认字体情况下记录的值和指定字体情况下记录的Χ 2、Υ2值，逻辑结果 result= (Χι = Χ2) Λ (Υι = Υ2)，当result为true则指定字体不存在，若为false则指定字体 存在，若探测的字体数量越多，所获得的字体特征差异性越大。</p>
+<p>[0052] 在本实施例中，所述步骤S3中，如图5所示，将步骤S1与步骤S2中采集得到的差异 特征信息、屏幕分辨率、设备像素比、Firefox的特殊信息以及字体特征信息存储在数据库 中，使用SHA1对数据进行加密，最后通过base64方式对其进行编码生成指纹。</p>
+<p>[0053] 在本实施例中，所述浏览器指纹生成算法具体为：</p>
+<p>[0054] 设定指纹算法为F( ·)，当出现一个新的浏览器信息X，生成一个浏览器指纹F(x)， 其遵循离散概率密度函数P(fn)，ne [0，1，. . .，N];对于某个特征参数的指纹生成结果fn，使 用自信息量I表示该浏览器指纹包含信息的比特数，其定义为：</p>
+<p>Figure CN106446202AD00082<br>[0056] 当指纹由不同的特征组合而成，设定每个特征参数对应的处理方法Fs ( · )，s e S， 根据公式⑵和⑶单独计算每个特征的自信息量并定义指纹组件的信息熵H (F)，信息熵表 征浏览器所有自信息量的期望值，对于两个相互独立的特征组件，自信息量可直接线性相 加：</p>
+<p>Figure CN106446202AD00083<br>Figure CN106446202AD00091<br>[0059] 根据自信息量I确认指纹关联对象的身份，所述自信息量I包含多个bit信息，每一 bit信息将该浏览器指纹可能的归属集合减半。通过特征组合生成指纹，每一个标识具有若 干bit的信息熵，其值越大则其越能准确的区分不同的浏览器实体。因此选取恰当且包含足 够bit信息的特征集合，通过其生成的指纹能够唯一确认关联对象的身份，所述特征集合包 括字体特征信息、屏幕分辨率、浏览器渲染字体差异信息、设备像素比、Firefox特殊信息。</p>
+<p>[0060] 在本实施例中，为了验证算法的可行性，可分模块进行差异特征及屏幕分辨率采 集实验、字体探测实验和指纹生成及抗干扰实验。</p>
+<p>[0061] 首先，在Windows操作系统下，使用不同类型不同版本的浏览器进行了CSS属性解 释测试，结果如表3所示。其中”V”表示浏览器支持对应的测试属性，”X”表示浏览器不支 持对应的测试属性，”15+”、”22+”等表示浏览器该版本及其以上版本支持对应的测试属性。 通过该测试能够得知浏览器的类型及其版本，若对浏览器版本进行更精细的划分测试，能 够获得更高的准确度。</p>
+<p>[0062] 表3属性测试</p>
+<p>Figure CN106446202AD00092<br>[0064]</p>
+<p>Figure CN106446202AD00101<br>[0065] 在分辨率测试中，根据目前常见的屏幕分辨率，将宽特征条件划分为(width&lt; 800)，（800彡width&lt;1024)，（1024彡width&lt;1152)，（1152彡width&lt;1280)，（1280彡width &lt;1360) , (1360^width&lt;1366) , (1366^width&lt; 1400) , (1400^width&lt; 1440) , (1440^ width&lt;1600) , (1600彡width&lt;1680) , (1680彡width&lt;1920) , (1920彡width) 12个区间进 行测试;将高特征条件划分为(height&lt;600)，（600&lt;height&lt;720)，（720&lt;height&lt;768)， (768彡height&lt;800)，（800彡height&lt;864)，（864彡height&lt;900)，（900彡height&lt;960)， (960彡height&lt;1024)，（1024彡height&lt;1050)，（1050彡height&lt;1080) 10个区间进行测 试。</p>
+<p>[0066] 屏幕分辨率测试结果如图6所示，图中的散点表示实验测试采集的屏幕分辨率信 息，通过该方法隐式采集的分辨率信息与设备真实分辨率一致，使用Media queries方式采 集屏幕分辨率是可行的。</p>
+<p>[0067] 然后在字体探测实验中，选取230多种字体，使用不同设备的不同浏览器进行测 试，部分探测结果如表4所示，其中”V”表示字体存在，”X”表示字体不存在。通过实验结果 可知不同设备、不同浏览器之间的字体信息存在差异，若进行探测的字体数量越多，则差异 性越明显。</p>
+<p>[0068] 表4字体探测示例</p>
+<p>[0069]</p>
+<p>Figure CN106446202AD00111<br>[0070] 最后，搭建一个网站，通过用户访问站点的方式进行指纹生成测试。网站采集CSS 属性解释差异信息、屏幕分辨率、设备像素比、Firefox特殊信息、字体探测信息等标识数 据，通过收集的数据生成用户的浏览器指纹。网站共收集了 108个用户的指纹信息，借助 cookie来判断是否来自同一用户的重复访问，其中101次来自不同用户的访问，自信息量为 6.658bit。通过对比使用干扰工具前后访问网站所采集的标识数据及指纹结果来进行抗干 扰测试，结果如表5所示。</p>
+<p>[0071] 表5抗干扰测试结果</p>
+<p>Figure CN106446202AD00112<br>[0073]首先在未使用干扰工具的情况下访问网站，然后安装用于对抗指纹的FireGloves 插件，并清空字体列表、启用Random mode随机生成屏幕分辨率信息等功能，再次访问网站， 对比两次采集的标识数据结果一致，指纹生成的结果也一致；同样，比较 CanvasFingerprintBlock插件安装前后数据，结果也一致;安装Charnel eon插件后访问网 站，特征采集及指纹生成的过程未被Charnel eon检测到。</p>
+<p>[0074]综上所述，本实施例提供的一种基于特征隐式获取的抗干扰浏览器指纹生成算 法，将浏览器对CSS属性解释的效果差异、字体探测的不同结果、屏幕分辨率、设备像素比等 特征组合形成指纹，指纹的生成结果不会受到FireGloves、CanvasFingerprintBlock等指 纹干扰工具的影响。通过实验验证了算法的可行性，实验结果表明该算法生成的指纹具有 较强的唯一性且不易受干扰。后续工作还主要包括:挖掘其他特征信息增强指纹唯一性;使 用更多的干扰工具进行更广泛的抗干扰测试，从而发现不足，改进不足以提升抗干扰能力。 [0075]以上所述仅为本发明的较佳实施例，凡依本发明申请专利范围所做的均等变化与 修饰，皆应属本发明的涵盖范围。</p>
+<p>Claims (9)<br>Hide Dependent</p>
+<ol>
+<li>一种基于特征隐式获取的抗干扰浏览器指纹生成方法，其特征在于:包括以下步骤： 步骤SI:通过浏览器对CSS解释的效果差异隐式得到包括浏览器类型及版本、屏幕分辨 率、设备像素比以及Firefox特殊信息的浏览器特征信息； 步骤S2:通过字体探测方法隐式获取浏览器中包含的字体特征信息； 步骤S3:将所述步骤Sl中获取的浏览器特征信息与所述步骤S2中获取的字体特征信息 进行组合生成指纹。</li>
+<li>根据权利要求1所述的一种基于特征隐式获取的抗干扰浏览器指纹生成方法，其特 征在于:所述步骤Sl中，通过不同类型及版本的浏览器对CSS属性的兼容性和解释的差异， 隐式推得浏览器的类型及版本，并获取其中所包含的差异特征信息。</li>
+<li>根据权利要求2所述的一种基于特征隐式获取的抗干扰浏览器指纹生成方法，其特 征在于：所述 CSS属性包括border-image、-webkit-mask-image、border-image-sour ce、 box-sizingN background-size N column-count N transform-orignNnav-indexN outIine-offseto</li>
+<li>根据权利要求1所述的一种基于特征隐式获取的抗干扰浏览器指纹生成方法，其特 征在于:所述步骤Sl中，通过Media queries方法隐式获取设备屏幕分辨率、设备像素比、 Firefox特殊信息;其中，通过所述Media queries方法设置宽高特性测试表达式，根据浏览 器对Media queries解释的结果推得设备的屏幕分辨率;通过所述Media queries方法设置 设备像素比特性测试表达式，根据浏览器的解释结果获取设备像素比。</li>
+<li>根据权利要求4所述的一种基于特征隐式获取的抗干扰浏览器指纹生成方法，其特 征在于：所述步骤Sl中，所述Firefox特殊信息包括是否使用桌面窗口管理器、是否使用 windows默认主题、是否为经典模式。</li>
+<li>根据权利要求1所述的一种基于特征隐式获取的抗干扰浏览器指纹生成方法，其特 征在于:所述步骤S2中，根据浏览器渲染字体差异信息，通过探测字体的方法获取浏览器中 包含的字体特征信息。</li>
+<li>根据权利要求1所述的一种基于特征隐式获取的抗干扰浏览器指纹生成方法，其特 征在于:所述步骤S2中，分别获取任意一文本中文本元素左边界与右边界到浏览器视窗左 边界的距离^与^，文本元素上边界与下边界到浏览器视窗上边界的距离7:与7 2,并计算X = X2-X1、Y = y2-yi，X、Y为该文本的字体探测边界值比较参数，获取所述文本元素的字体特 征信息的方法具体为:首先设置文本的默认字体，获取并记录浏览器渲染后的^、心值，然后 将文本字体更改为一种特定的字体，记录下浏览器渲染后的X 2、Y2值;使用所述特定字体的 结果取决于用户浏览器上该字体是否可用，如果浏览器不支持该特定字体，则会沿用默认 字体；对比默认字体情况下记录的X 1值和指定字体情况下记录的Χ2、Υ2值，逻辑结果 result= (Χι = Χ2) Λ (Υι = Υ2)，当result为true则指定字体不存在，若为false则指定字体 存在，若探测的字体数量越多，所获得的字体特征差异性越大。</li>
+<li>根据权利要求1所述的一种基于特征隐式获取的抗干扰浏览器指纹生成方法，其特 征在于:所述步骤S3中，将步骤Sl与步骤S2中采集得到的差异特征信息、屏幕分辨率、设备 像素比、Firefox的特殊信息以及字体特征信息存储在数据库中，使用SHAl对数据进行加 密，最后通过base64方式对其进行编码生成指纹。</li>
+<li>根据权利要求1所述的一种基于特征隐式获取的抗干扰浏览器指纹生成方法，其特 征在于:所述浏览器指纹生成算法具体为： 设定指纹算法为F( ·)，当出现一个新的浏览器信息X，生成一个浏览器指纹F(X)，其遵 循离散概率密度函数P(fn)，ne [〇，1，…，N];对于某个特征参数的指纹生成结果fn，使用自 信息量I表示该浏览器指纹包含信息的比特数，其定义为：<br>Figure CN106446202AC00031<br>当指纹由不同的特征组合而成，设定每个特征参数对应的处理方法Fs(·)，ses，根据 公式(2)和⑶单独计算每个特征的自信息量并定义指纹组件的信息熵H (F)，信息熵表征浏 览器所有自信息量的期望值，对于两个相互独立的特征组件，自信息量可直接线性相加：<br>Figure CN106446202AC00032<br>根据自信息量I确认指纹关联对象的身份，所述自信息量I包含多个bit信息，通过选取 恰当且包含足够bit信息的特征集合，通过其生成的指纹唯一确认关联对象的身份，所述特 征集合包括字体特征信息、屏幕分辨率、浏览器渲染字体差异信息、设备像素比、Firefox特 殊信息。</li>
+</ol>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">DevilAguo0</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://butterfly.devilaguo.com/2021/02/06/%E7%80%8F%E8%A6%BD%E5%99%A8%E6%8C%87%E7%B4%8B/">https://butterfly.devilaguo.com/2021/02/06/%E7%80%8F%E8%A6%BD%E5%99%A8%E6%8C%87%E7%B4%8B/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://butterfly.devilaguo.com" target="_blank">DevilAguo0</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8C%87%E7%BA%B9/">浏览器指纹</a><a class="post-meta__tags" href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8C%87%E7%BA%B9%E7%94%9F%E6%88%90%E6%96%B9%E6%B3%95/">浏览器指纹生成方法</a></div><div class="post_share"><div class="social-share" data-image="https://8zekai.com/wp-content/uploads/2020/09/digital-fingerprint.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2021/02/04/%E5%B4%87%E9%AB%98/"><img class="next-cover" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">关于崇高</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mv5bztnmoge1zmqtyjzmyy00mdhklthkzjytnzkyzdyxnta5zte0xkeyxkfqcgdeqxvynjg2njqwmdqat-v1-sy739-cr0-0-1776-739-al-1557325382.jpg?crop=0.502xw:1.00xh;0.280xw,0&amp;resize=640:*" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">DevilAguo0</div><div class="author-info__description">DevilAguo0这个人，即使没有华丽的外表，也是个可以发光的孩子就好了</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/DevilAguo0"><i class="fab fa-github"></i><span>跟我走</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/DevilAguo0" target="_blank" title="Github"><i class="fab fa-github"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">我已亭亭,无忧亦无惧.</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/02/06/%E7%80%8F%E8%A6%BD%E5%99%A8%E6%8C%87%E7%B4%8B/" title="一种基于特征隐式获取的抗干扰浏览器指纹生成方法"><img src="https://8zekai.com/wp-content/uploads/2020/09/digital-fingerprint.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="一种基于特征隐式获取的抗干扰浏览器指纹生成方法"/></a><div class="content"><a class="title" href="/2021/02/06/%E7%80%8F%E8%A6%BD%E5%99%A8%E6%8C%87%E7%B4%8B/" title="一种基于特征隐式获取的抗干扰浏览器指纹生成方法">一种基于特征隐式获取的抗干扰浏览器指纹生成方法</a><time datetime="2021-02-06T09:54:58.000Z" title="发表于 2021-02-06 17:54:58">2021-02-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/02/04/%E5%B4%87%E9%AB%98/" title="关于崇高"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="关于崇高"/></a><div class="content"><a class="title" href="/2021/02/04/%E5%B4%87%E9%AB%98/" title="关于崇高">关于崇高</a><time datetime="2021-02-03T17:16:34.000Z" title="发表于 2021-02-04 01:16:34">2021-02-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/02/04/%E6%B2%89%E9%BB%98/" title="沉默的大多数"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="沉默的大多数"/></a><div class="content"><a class="title" href="/2021/02/04/%E6%B2%89%E9%BB%98/" title="沉默的大多数">沉默的大多数</a><time datetime="2021-02-03T17:08:09.000Z" title="发表于 2021-02-04 01:08:09">2021-02-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/02/04/%E7%8E%8B%E5%B0%8F%E6%B3%A2/" title="一只特立独行的猪"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="一只特立独行的猪"/></a><div class="content"><a class="title" href="/2021/02/04/%E7%8E%8B%E5%B0%8F%E6%B3%A2/" title="一只特立独行的猪">一只特立独行的猪</a><time datetime="2021-02-03T16:47:20.000Z" title="发表于 2021-02-04 00:47:20">2021-02-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/02/04/%E5%8C%BF%E5%90%8D%E5%B7%A5%E5%85%B7/" title="解读俄罗斯地下论坛当下最流行的四大匿名工具"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="解读俄罗斯地下论坛当下最流行的四大匿名工具"/></a><div class="content"><a class="title" href="/2021/02/04/%E5%8C%BF%E5%90%8D%E5%B7%A5%E5%85%B7/" title="解读俄罗斯地下论坛当下最流行的四大匿名工具">解读俄罗斯地下论坛当下最流行的四大匿名工具</a><time datetime="2021-02-03T16:27:42.000Z" title="发表于 2021-02-04 00:27:42">2021-02-04</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://8zekai.com/wp-content/uploads/2020/09/digital-fingerprint.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By DevilAguo0</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js"></script><script>(function(d, w, c) {
+    w.ChatraID = '82TE3yaLxg3FHj6kM';
+    var s = d.createElement('script');
+    w[c] = w[c] || function() {
+        (w[c].q = w[c].q || []).push(arguments);
+    };
+    s.async = true;
+    s.src = 'https://call.chatra.io/chatra.js';
+    if (d.head) d.head.appendChild(s);
+})(document, window, 'Chatra');
+
+if (true) {
+  var chatBtnFn = () => {
+    var chatBtn = document.getElementById("chat_btn")
+    chatBtn.addEventListener("click", function(){
+      Chatra('openChat')
+    });
+  }
+  chatBtnFn()
+} else {
+  if (true) {
+    function chatBtnHide () {
+      Chatra('hide')
+    }
+    function chatBtnShow () {
+      Chatra('show')
+    }
+  }
+}</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
